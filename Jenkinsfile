@@ -9,7 +9,7 @@ def configMap =[
 
 //pipelineDecision.decidePipeline(configMap)
 
-if( ! env.BRANCH_NAME.equalsIgnoreCase('main')){
+if( ! env.GIT_BRANCH.contains('main')){
     pipelineDecission.decidePipeline(configMap)
 }
 else{
