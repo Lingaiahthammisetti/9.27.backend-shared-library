@@ -9,3 +9,4 @@ def configMap =[
 
 pipelineDecision.decidePipeline(configMap)
 
+ echo "Branch Name: ${env.BRANCH_NAME}"
