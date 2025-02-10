@@ -8,11 +8,11 @@ def configMap = [
     project: "expense"
 ]
 
-pipelineDecision.decidePipeline(configMap)
+//pipelineDecision.decidePipeline(configMap)
 
-// if( ! env.BRANCH_NAME.equalsIgnoreCase('main')){
-//     pipelineDecission.decidePipeline(configMap)
-// }
-// else{
-//     echo "Proceed with CR or NON-PROD pipeline"
-// }
+if(!env.BRANCH_NAME.equalsIgnoreCase('main')){
+    pipelineDecission.decidePipeline(configMap)
+}
+else{
+    echo "Proceed with CR or NON-PROD pipeline"
+}
