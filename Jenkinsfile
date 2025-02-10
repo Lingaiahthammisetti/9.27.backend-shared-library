@@ -21,6 +21,7 @@ def configMap =[
     project: "expense"
 ]
 //Here ‘!’ is for not equal to main branch, means 
+echo "branch name:"+env.BRANCH_NAME
 if( ! env.BRANCH_NAME.equalsIgnoreCase('main')){
     pipelineDecission.decidePipeline(configMap)   //for non-prod pipeline like feature branch pipelines.
 }
