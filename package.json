@@ -1,10 +1,6 @@
 {
   "name": "Expense 3 Tier App",
-<<<<<<< HEAD
   "version": "1.4.5",
-=======
-  "version": "1.2.5",
->>>>>>> 377290cff8a05e10315a4365f980648b2fec068d
   "description": "",
   "main": "index.js",
   "scripts": {
